@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style type="text/css">
+.auto-style1 {
+	margin-top: 0px;
+}
+.auto-style2 {
+	font-size: x-large;
+	font-weight: bold;
+}
+.auto-style3 {
+	max-width: 100%;
+}
+.auto-style4 {
+	line-height: 150%;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="left: 0px; top: 0; height: 78px">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#home" class="w3-bar-item w3-button">Home</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact Us</a>
+	    <a href="#about" class="w3-bar-item w3-button">Services</a>
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSeZPV_SkZNVMsEke_2saZ7lHNEOOKuaZ6uAUshhGR1krlfpMg/viewform?usp=sf_link" class="w3-bar-item w3-button">Submit Resume</a>
+     
+    </div>
+    <a href="#home" class="w3-bar-item w3-button" style="width: 246px; height: 44px">
+	  <span class="auto-style2">OnBoards</span><p class="auto-style1" style="height: 19px">Empowering To Conquer</p></a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px; left: 0px; top: 0px;" id="home">
+  <img  src="OnBoard Logo.png" alt="Architecture" width="75%"  >
+  <div class="w3-display-middle w3-margin-top w3-center"> </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="home">
+   
+    <h3 class="auto-style4" style="height: 36px">About Us</h3>
+	  <h5 class="w3-justify">We are a staffing company specializing in information technology. Our team has over 8 years of experience providing suitable IT professionals for permanent &amp; contractual positions. We  understand that staffing is more important than ever in the transforming business across US as large multinational companies are looking for premium candidates in a short period of time while remaining flexible in their global operations and cutting overheads to maximize profit. We have capability to provide IT professionals for all your software development, infrastructure, networking &amp; maintenance needs. Highly talented staff,huge pool of consultants &amp; our focused approach towards our clients result in providing right fit candidate, at right time &amp; at reasonable cost. We do understand that the most important component of success for any business is the people working there. Our team helps our clients in providing the best fit Talent for their IT needs so that they just have to concentrate on their business &amp; IT related concerns for us. Our recruiters have been using a high end application for providing you the best possible consultant to fulfil your needs in timely manner. In 90% of the cases we submit the right candidate within 8 hours of receipt any IT requirement. Give us a chance to prove ourselves by giving us your requirement. </h5>
+	
+  </div>
+
+  
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">SERVICES</h3>
+
+<p>At HTT JOB direct hire service is very specific to the client's need. A dedicated & separate team works first understands the client's requirements in terms of skills, location, experience & budget so that the right candidate is submitted to the client in the first go itself. We have certain processes which helps us to connect you to the perfect match You may trust us for all your short term requirements, we provide highly qualified & talented people within very short time to fulfil your needs. Since for such requirements time is the key factor, our process & dedicated team ensures that the right candidate is submitted in quickest possible time.
+    </p>
+  </div>
+
+ 
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+	 <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="alpesh.bmp" alt="John" style="width:100%">
+      <h3>Alpesh Shah</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    
+  </div>
+     </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Google Map -->
+
+<!-- Footer -->
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
